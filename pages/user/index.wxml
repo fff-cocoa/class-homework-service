@@ -1,0 +1,10 @@
+<!--pages/user/index.wxml-->
+<view class="container">
+  <view class="header-background"></view>
+  <view class="user-header">
+    <view class="cover"></view>
+  </view>
+  <view class="user-content">
+    
+  </view>
+</view>

@@ -1,0 +1,95 @@
+<!--index.wxml-->
+<view class="container">
+  <a href="#/message/release" id="release" class="release">
+    <h2>发布</h2>
+  </a>
+  <!-- <view class="header-help">
+    <view class="help-left">软件</view>
+    <view class="help-right">资料</view>
+  </view> -->
+  <view class="content">
+    <view class="homeworks">
+
+      <view id="msg" class="msg">
+        <a href="#/message/123">
+          <view class="task" style="">
+            <view class="band">
+              <span>作业</span>
+            </view>
+            <h2>网页期末作业上课交效果图第一稿</h2>
+            <line></line>
+            <view class="text_p">
+              <view>描述： 作业1</view>
+              <view>截止：5月12日 18:00</view>
+            </view>
+            <line2></line2>
+            <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
+          </view>
+        </a>
+        <a href="#/message/456">
+          <view style="" class="task">
+            <view class="band">
+              <span>提醒</span>
+            </view>
+            <h2>Linux</h2>
+            <line></line>
+            <view class="text_p">
+              <view>描述： 作业1</view>
+              <view>截止：5月12日 18:00</view>
+            </view>
+            <line2></line2>
+            <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
+          </view>
+        </a>
+        <a href="#/message/456">
+          <view style="" class="task">
+            <view class="band">
+              <span>提醒</span>
+            </view>
+            <h2>Linux</h2>
+            <line></line>
+            <view class="text_p">
+              <view>描述： 作业1</view>
+              <view>截止：5月12日 18:00</view>
+            </view>
+            <line2></line2>
+            <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
+          </view>
+        </a>
+        <a href="#/message/456">
+          <view style="" class="task">
+            <view class="band">
+              <span>提醒</span>
+            </view>
+            <h2>Linux</h2>
+            <line></line>
+            <view class="text_p">
+              <view>描述： 作业1</view>
+              <view>截止：5月12日 18:00</view>
+            </view>
+            <line2></line2>
+            <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
+          </view>
+        </a>
+      </view>
+      <!-- <view class="zy-item">
+        <text class="zy-title">诚信之星</text>
+        <view class="release-date"><span>发布时间:</span>2022/5/19 10:54:26</view>
+        <view class="expired-date"><span>截止时间:</span>2022/5/24 18:00:00</view>
+        <view class="isAdmin">管理</view>
+      </view>
+      <view class="zy-item">
+        <text class="zy-title">诚信之星</text>
+        <view class="release-date"><span>发布时间:</span>2022/5/19 10:54:26</view>
+        <view class="expired-date"><span>截止时间:</span>2022/5/24 18:00:00</view>
+        <view class="isAdmin">管理</view>
+      </view>
+      <view class="zy-item">
+        <text class="zy-title">诚信之星</text>
+        <view class="release-date"><span>发布时间:</span>2022/5/19 10:54:26</view>
+        <view class="expired-date"><span>截止时间:</span>2022/5/24 18:00:00</view>
+        <view class="isAdmin">管理</view>
+      </view> -->
+    </view>
+  </view>
+</view>

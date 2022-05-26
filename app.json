@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/schedule/index",
+    "pages/user/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "/image/icon_Tab_home.png",
+        "selectedIconPath": "/image/icon_Tab_home_selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/schedule/index",
+        "iconPath": "/image/icon_cloud.png",
+        "selectedIconPath": "/image/icon_cloud_HL.png",
+        "text": "课程表"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "/image/icon_API_HL.png",
+        "selectedIconPath": "/image/icon_cloud.png",
+        "text": "用户"
+      }
+    ]
+  }
+}
