@@ -4435,5 +4435,8 @@
   background-color: #3699d5;
   color: #fff;
 }
+.weui-cell{
+  height: 15pt;
+}
 
 
