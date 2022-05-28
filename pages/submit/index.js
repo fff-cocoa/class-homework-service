@@ -1,66 +1,80 @@
-// pages/submit/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
   onShareAppMessage() {
+    return {
+      title: '上传文件',
+      path: 'packageAPI/pages/network/upload-file/upload-file'
+    }
+  },
 
+  chooseImage() {
+    const self = this
+
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['compressed'],
+      sourceType: ['album'],
+      success: async function(res) {
+        const imageSrc = res.tempFilePaths[0]
+        const r = await wx.cloud.callFunction({
+          name: 'login',
+          data: {
+            action: 'openid'
+          },
+        })
+        const openId = r.result.openid;
+        const cloudPath = `upload/${openId}.png`
+        wx.cloud.uploadFile({
+          cloudPath,  // 上传至云端的路径
+          filePath: imageSrc, // 小程序临时文件路径
+          config: {
+            env: 'release-b86096'
+          },
+          success: res => {
+            // 返回文件 ID
+            console.log(res.fileID)
+            console.log('uploadImage success, res is:', res)
+            wx.showToast({
+              title: '上传成功',
+              icon: 'success',
+              duration: 1000
+            })
+
+            self.setData({
+              imageSrc,
+              fileID: res.fileID,
+            })
+          },
+          fail({errMsg}) {
+            console.log('uploadImage fail, errMsg is', errMsg)
+          }
+        })
+      },
+
+      fail: res => {
+        wx.showToast({
+          icon: 'none',
+          title: '上传失败',
+        })
+        console.log('uploadImage fail, errMsg is', res.errMsg)
+      }
+    })
+  },
+  onUnload() {
+    if (this.data.fileID) {
+      wx.cloud.deleteFile({
+        fileList: [this.data.fileID]
+      })
+    }
+  },
+  onLoad() {
+    this.setData({
+      theme: wx.getSystemInfoSync().theme || 'light'
+    })
+
+    if (wx.onThemeChange) {
+      wx.onThemeChange(({theme}) => {
+        this.setData({theme})
+      })
+    }
   }
 })

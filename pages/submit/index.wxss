@@ -1,5 +1,56 @@
 /* pages/submit/index.wxss */
+.container{
+  height: 100%;
+}
 .title > text{
-  font-size: medium;
+  font-size: 20pt;
   text-align: left;
+  margin: 1em 0;
+  border-left: 10px #667cff solid;
+}
+.tips{
+  margin: 10pt 6pt;
+  padding: 2pt 2pt;
+  background: #f4f5f6;
+  border-left: 2pt solid #9b4dca;
+  overflow-y: hidden;
+}
+.tips > text{
+  font-size: smaller;
+  text-align: left;
+  padding-left: 0;
+  
+}
+
+.image {
+  width: 100%;
+  height: 330px;
+}
+.page-body-info {
+  display: flex;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 410px;
+  border-top: 1px solid var(--weui-FG-3);
+  border-bottom: 1px solid var(--weui-FG-3);
+  align-items: center;
+  justify-content: center;
+}
+.upload {
+  display: flex;
+  box-sizing: border-box;
+  font-size: 1em;
+  width: 95vw;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5pt dashed rgba(0, 0, 0, 0.3);
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.upload-button{
+  color: #cccccc;
+  font-size: 20pt;
 }

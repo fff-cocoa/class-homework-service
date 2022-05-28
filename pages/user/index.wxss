@@ -4431,6 +4431,9 @@
 .page-body{
   margin-bottom: 10pt;
 }
-
+.edit-passwd{
+  background-color: #3699d5;
+  color: #fff;
+}
 
 

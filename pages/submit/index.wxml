@@ -1,8 +1,21 @@
+<import src="../../common/head.wxml" />
+<import src="../../common/foot.wxml" />
 <!--pages/submit/index.wxml-->
 <view class="container slide-in-left">
   <view class="title">
-  <text>网页期末作业上课交效果图第一稿</text>
+    <text>网页期末作业上课交效果图第一稿</text>
+  </view>
+  <view class="tips">
+    <text>接伍仙桥居委通知： 5月15日（周日）伍仙桥社区将开展全员核酸 时间：5月15日（周日） 上午10点00分开始，到晚上8点30分 地点：红旗市场（广州大道北991号之一） 注意事项：
+      1，健康码“绿码”方能入场，
+      2，48小时内接种了新冠疫苗的暂缓做核酸
+      2，提前填写资料生成“粤核酸3”码，选择大规模核酸检测。
+      3，如不按规定参加此次核酸检测造成相应后果的，将承担法律责任。 请辖区内各居民落实“应检尽检”，好个人防护，及时前往采样点进行核酸检测。 感谢您的支持。</text>
   </view>
   <view class="content">
+  </view>
+
+  <view class="upload">
+    <view class="upload-button">点击上传文件</view>
   </view>
 </view>
