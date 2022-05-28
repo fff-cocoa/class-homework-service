@@ -1,0 +1,8 @@
+<!--pages/submit/index.wxml-->
+<view class="container slide-in-left">
+  <view class="title">
+  <text>网页期末作业上课交效果图第一稿</text>
+  </view>
+  <view class="content">
+  </view>
+</view>

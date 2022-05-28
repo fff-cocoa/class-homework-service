@@ -1,10 +1,50 @@
 <!--pages/user/index.wxml-->
-<view class="container">
-  <view class="header-background"></view>
-  <view class="user-header">
-    <view class="cover"></view>
+  <view class="container page" data-weui-theme="{{theme}}">
+    <template is="head" data="{{title: 'open-data'}}" />
+    <view class="page-body">
+      <view class="avatar">
+        <open-data class="avatar-img" type="userAvatarUrl" lang="zh_CN"></open-data>
+      </view>
+      <form>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">昵称</view>
+              </view>
+              <view class="weui-cell__bd">
+                <view class="weui-input">
+                  <open-data type="userNickName" lang="zh_CN"></open-data>
+                </view>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">真实姓名</view>
+              </view>
+              <view class="weui-cell__bd">
+                <view class="weui-input">
+                  <view type="userName" lang="zh_CN">张宇鹏</view>
+                </view>
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">学号</view>
+              </view>
+              <view class="weui-cell__bd">
+                <view class="weui-input">
+                  <view type="userName" lang="zh_CN">202103680127</view>
+                </view>
+              </view>
+            </view>
+
+
+          </view>
+        </view>
+      </form>
+    </view>
+    <button type="primary">修改密码</button>
+
+    <!-- <template is="foot" /> -->
   </view>
-  <view class="user-content">
-    
-  </view>
-</view>

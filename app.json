@@ -1,15 +1,16 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/index",
     "pages/schedule/index",
     "pages/user/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/submit/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",

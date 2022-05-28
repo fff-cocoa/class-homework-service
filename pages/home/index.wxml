@@ -11,8 +11,7 @@
     <view class="homeworks">
 
       <view id="msg" class="msg">
-        <a href="#/message/123">
-          <view class="task" style="">
+          <view class="task" bindtap="scrollToTop">
             <view class="band">
               <span>作业</span>
             </view>
@@ -25,7 +24,6 @@
             <line2></line2>
             <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
           </view>
-        </a>
         <a href="#/message/456">
           <view style="" class="task">
             <view class="band">
@@ -71,7 +69,9 @@
             <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
           </view>
         </a>
-
+        <!-- <view class="btn-area">
+          <button type="primary" bindtap="scrollToTop">返回顶部</button>
+        </view> -->
       </view>
       <!-- <view class="zy-item">
         <text class="zy-title">诚信之星</text>

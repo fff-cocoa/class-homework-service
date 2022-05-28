@@ -1,0 +1,5 @@
+/* pages/submit/index.wxss */
+.title > text{
+  font-size: medium;
+  text-align: left;
+}
