@@ -12,9 +12,21 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
   },
   // 事件处理函数
+  onReady(){
+    wx.pageScrollTo({
+      scrollTop: 80,
+      duration: 300
+    })
+  },
   bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'
+    })
+  },
+  scrollToTop() {
+    wx.pageScrollTo({
+      scrollTop: 20,
+      duration: 300
     })
   },
   onLoad() {

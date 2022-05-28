@@ -71,6 +71,7 @@
             <p3>提交情况：<object><a href="#/user">登录</a></object>查看</p3>
           </view>
         </a>
+
       </view>
       <!-- <view class="zy-item">
         <text class="zy-title">诚信之星</text>

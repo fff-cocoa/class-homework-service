@@ -31,8 +31,8 @@
       },
       {
         "pagePath": "pages/user/index",
-        "iconPath": "/image/icon_API_HL.png",
-        "selectedIconPath": "/image/icon_cloud.png",
+        "iconPath": "/image/icon_Tab_user.png",
+        "selectedIconPath": "/image/icon_Tab_user_selected.png",
         "text": "用户"
       }
     ]
